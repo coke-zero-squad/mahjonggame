@@ -1,0 +1,22 @@
+To-do list for mahjonggame
+
+1.make it work
+2. figure out client-server model
+3. add commands for 
+    -pon
+    -chi
+    -riichi
+    -ron
+    -tsumo
+    -kon
+    -ignore
+
+4. scoring
+5. new round
+6. round wind
+7. furiten
+8. check ready hand
+9. yaku check
+10. $$$
+
+extract that long line into a function so it isnt long
