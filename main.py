@@ -145,3 +145,28 @@ def main():
     fileinput.close()
 
     return state
+
+def find_minimum_shanten(hand):
+    hand = sorted(hand, lambda tile: (suit, value))
+    useless_tiles = count_useless_tiles(hand)
+    diff_terminals = count_diff_terminals(hand)
+
+
+    
+def count_useless_tiles(hand):
+    count = 0
+    for i in len(hand):
+        if hand[i].is_honor():
+            if i > 0 and hand[i-1].value != hand[i].value or  i < len(hand) - 1 and hand[i+1].value != hand[i].value:
+                count += 1
+        else:
+            if i > 0 and hand[i-1].value < hand[i].value - 2 and hand[i-1.value] > hand[i].value + 2 or i > 0 and hand[i+1].value < hand[i].value - 2 and hand[i+1.value] > hand[i].value + 2:
+                count +=
+    return count
+
+
+
+
+
+minimum_shanten = min(useless_tiles, 6 - pairs, 13 - diff_terminals - max(terminal_pairs, 1)).
+
