@@ -157,11 +157,11 @@ def count_useless_tiles(hand):
     count = 0
     for i in len(hand):
         if hand[i].is_honor():
-            if i > 0 && hand[i-1].value != hand[i].value ||  i < len(hand) - 1 && hand[i+1].value != hand[i].value:
-                count++
+            if i > 0 and hand[i-1].value != hand[i].value or  i < len(hand) - 1 and hand[i+1].value != hand[i].value:
+                count += 1
         else:
-            if i > 0 && hand[i-1].value < hand[i].value - 2 && hand[i-1.value] > hand[i].value + 2 || i > 0 && hand[i+1].value < hand[i].value - 2 && hand[i+1.value] > hand[i].value + 2:
-                count++
+            if i > 0 and hand[i-1].value < hand[i].value - 2 and hand[i-1.value] > hand[i].value + 2 or i > 0 and hand[i+1].value < hand[i].value - 2 and hand[i+1.value] > hand[i].value + 2:
+                count +=
     return count
 
 
